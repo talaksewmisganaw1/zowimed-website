@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zowi Traditional Medical Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-leaf text-emerald-500 text-3xl mr-2"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Zowi<span class="text-emerald-500">Med</span></h1>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <nav class="hidden md:flex lg:space-x-8 md:space-x-5 sm:space-x-5 py-4 *:text-[1.07rem] *:font-bold">
+                <a href="#home" class="nav-link home text-green-500 text-gray-700  font-medium">Home</a>
+                <a href="#about" class="nav-link about text-gray-700  font-medium">About</a>
+                <a href="#services" class="nav-link services text-gray-700  font-medium">Services</a>
+                <a href="#doctors" class="nav-link doctors text-gray-700  font-medium">Practitioners</a>
+                <a href="#testimonials" class="nav-link testimonials text-gray-700  font-medium">Testimonials</a>
+                <a href="#contact" class="nav-link contact text-gray-700  font-medium">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-emerald-500">Home</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-emerald-500">About</a>
+            <a href="#services" class="block py-2 text-gray-700 hover:text-emerald-500">Services</a>
+            <a href="#doctors" class="block py-2 text-gray-700 hover:text-emerald-500">Practitioners</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 hover:text-emerald-500">Testimonials</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-emerald-500">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="border-red-600 hero-bg pt-32 pb-20 text-white md:h-[80vh] flex items-center justify-center bg-cover bg-center relative" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="container mx-auto px-4 sm:px-5 md:px-4 flex flex-col md:flex-row items-center md:h-[90%] md:*:h-full gap-5">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in flex flex-col justify-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Ancient Wisdom, Modern Healing</h2>
+                <p class="text-xl mb-8">Experience the power of traditional medicine combined with modern understanding for complete wellness.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-6 rounded-full text-center transition duration-300">Book Appointment</a>
+                    <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-800 text-white font-bold py-3 px-6 rounded-full text-center transition duration-300">Our Services</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center items-center fade-in">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Traditional Medicine" class="rounded-lg shadow-2xl flex w-full md:h-[90%] md:w-[80%] sm:w-[92%]">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Our Center</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">Zowi Traditional Medical Center blends centuries-old healing traditions with contemporary healthcare practices to provide holistic care for body, mind, and spirit.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Traditional Medicine" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Philosophy</h3>
+                    <p class="text-gray-600 mb-6">At Zowi, we believe in treating the root cause of illness rather than just symptoms. Our practitioners draw from diverse traditional healing systems including Bone-setting, Traditional Ethiopian Medicine, and Indigenous healing practices.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-hand-holding-heart text-emerald-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Holistic Approach</h4>
+                                <p class="text-gray-600">We consider all aspects of your life - physical, emotional, and spiritual - in our treatment plans.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-seedling text-emerald-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Natural Remedies</h4>
+                                <p class="text-gray-600">Our treatments primarily use natural substances like herbs, minerals, and other organic materials.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-user-md text-emerald-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Personalized Care</h4>
+                                <p class="text-gray-600">Each treatment plan is tailored to your unique constitution and health needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Healing Services</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">We offer a comprehensive range of traditional therapies designed to restore balance and promote natural healing.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="treatment-card transition-transform hover:-translate-y-1 hover:shadow-lg bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-spa text-emerald-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Herbal Medicine</h3>
+                    <p class="text-gray-600 mb-4">Customized herbal formulations prepared from organic ingredients to address specific health concerns.</p>
+                    <a href="#" class="text-emerald-500 font-medium flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="treatment-card transition-transform hover:-translate-y-1 hover:shadow-lg bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-bone text-emerald-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Bone-setting (Wogesha)</h3>
+                    <p class="text-gray-600 mb-4">Traditional manual techniques to realign fractured or dislocated bones, often combined with herbal ointments and splints for natural healing.</p>
+                    <a href="#" class="text-emerald-500 font-medium flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="treatment-card transition-transform hover:-translate-y-1 hover:shadow-lg bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-hand-holding-water text-emerald-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Cupping Therapy</h3>
+                    <p class="text-gray-600 mb-4">A bloodletting therapy where small incisions and suction are applied to remove “bad blood” and improve circulation.</p>
+                    <a href="#" class="text-emerald-500 font-medium flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="treatment-card transition-transform hover:-translate-y-1 hover:shadow-lg bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-hand text-emerald-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Massage and Heat Therapy</h3>
+                    <p class="text-gray-600 mb-4">Therapeutic bodywork involving pressure, kneading, and heat applications to relieve muscle pain and stimulate healing energy.</p>
+                    <a href="#" class="text-emerald-500 font-medium flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="treatment-card transition-transform hover:-translate-y-1 hover:shadow-lg bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-wind text-emerald-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Steam Therapy</h3>
+                    <p class="text-gray-600 mb-4">Inhalation of herbal-infused steam to open airways, relieve respiratory problems, and detoxify the body through sweating and improved circulation.</p>
+                    <a href="#" class="text-emerald-500 font-medium flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="treatment-card transition-transform hover:-translate-y-1 hover:shadow-lg bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-apple-alt text-emerald-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dietary Therapy</h3>
+                    <p class="text-gray-600 mb-4">The use of specific diets and natural foods to cleanse the body, boost immunity, and promote recovery from illness.</p>
+                    <a href="#" class="text-emerald-500 font-medium flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors/Practitioners Section -->
+    <section id="doctors" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Meet Our Practitioners</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">Our team of experienced practitioners brings together diverse healing traditions with deep knowledge and compassionate care.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Doctor 1 -->
+                <div class="doctor-card group bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://plus.unsplash.com/premium_photo-1661584093660-cceb3c32460d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Samrawit Abenezer" class="w-full h-full object-cover transition duration-500 transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Samrawit Abenezer</h3>
+                        <p class="text-emerald-500 font-medium mb-3">Traditional Ethiopian Medicine Specialist</p>
+                        <p class="text-gray-600 mb-4">With over 25 years of experience, Dr. Samrawit specializes in Herbal remedies, herbal medicine, and Qi cultivation therapies.</p>
+                        <div class="flex space-x-3">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full">Herbalism</span>
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full">Physiotherapy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 2 -->
+                <div class="doctor-card group bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1635188499893-8d1e64742ed4?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Biniam Sahilu" class="w-full h-full object-cover transition duration-500 transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Biniam Sahilu</h3>
+                        <p class="text-emerald-500 font-medium mb-3">Bone-setting Physician</p>
+                        <p class="text-gray-600 mb-4">Trained in Kerala, India, Dr. Sharma brings authentic bone-setting treatments including Manual realignment with detox.</p>
+                        <div class="flex space-x-3">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full">Bone-setting</span>
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full">Detox</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 3 -->
+                <div class="doctor-card group bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Meron Abebe" class="transition-transform duration-300 group-hover:scale-105 w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Meron Abebe</h3>
+                        <p class="text-emerald-500 font-medium mb-3">Curandera & Herbalist</p>
+                        <p class="text-gray-600 mb-4">A fourth-generation healer, Meron specializes in traditional Latin American herbal remedies and spiritual healing.</p>
+                        <div class="flex space-x-3">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full">Herbalism</span>
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full">Energy Work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-emerald-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Patient Experiences</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">Hear from those who have experienced the transformative power of our traditional healing approaches.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Markan M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"After years of chronic migraines, Dr. Samrawit's Herbal remedies treatments have given me my life back. The holistic approach addressed not just my pain but also my sleep and stress levels."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Yakob T.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The detox i had with Dr. Sharma was life-changing. I didn't realize how much my modern lifestyle was affecting my health until I experienced this ancient cleansing process."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Elena R." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Rahel R.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Meron's herbal preparations and guidance helped me through a difficult period of anxiety and insomnia. Her wisdom and the natural remedies worked when pharmaceuticals didn't."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment CTA Section -->
+    <section class="py-16 bg-emerald-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Begin Your Healing Journey?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Schedule a consultation with one of our practitioners to discuss your health goals and create a personalized treatment plan.</p>
+            <a href="#contact" class="bg-white text-emerald-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full inline-block transition duration-300">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">We're here to answer your questions and help you on your path to wellness.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-emerald-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Address</h4>
+                                <p class="text-gray-600">MA Building, Megenagna, Addis Ababa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-emerald-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Phone</h4>
+                                <p class="text-gray-600">+251912345678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-emerald-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">info@Zowimed.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-emerald-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Hours</h4>
+                                <p class="text-gray-600">Monday-Friday: 9am - 6pm<br>Saturday: 9am - 2pm<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-emerald-100 text-emerald-500 hover:bg-emerald-500 hover:text-white p-3 rounded-full transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="bg-emerald-100 text-emerald-500 hover:bg-emerald-500 hover:text-white p-3 rounded-full transition duration-300"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="bg-emerald-100 text-emerald-500 hover:bg-emerald-500 hover:text-white p-3 rounded-full transition duration-300"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="bg-emerald-100 text-emerald-500 hover:bg-emerald-500 hover:text-white p-3 rounded-full transition duration-300"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3939.2358536485503!2d38.80199104446315!3d9.018967957736537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1752239288305!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-emerald-500 text-3xl mr-2"></i>
+                        <h3 class="text-2xl font-bold">Zowi<span class="text-emerald-500">Med</span></h3>
+                    </div>
+                    <p class="text-gray-400">Bridging ancient wisdom with modern healthcare for complete wellness.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-emerald-500 transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-emerald-500 transition duration-300">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-emerald-500 transition duration-300">Services</a></li>
+                        <li><a href="#doctors" class="text-gray-400 hover:text-emerald-500 transition duration-300">Practitioners</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-emerald-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300">Herbal Medicine</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300">Bone-setting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300">Cupping Therapy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300">Massage and Heat Therapy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300">Steam Therapy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300">Dietary Therapy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to receive health tips and updates from our center via email.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-emerald-500 hover:bg-emerald-600 px-4 py-2 rounded-r-lg transition duration-300"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© <span id="year"></span> Zowi Traditional Medical Center. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-emerald-500 transition duration-300"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-8 right-8 bg-emerald-500 text-white p-3 rounded-full shadow-lg hover:bg-emerald-600 transition duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
